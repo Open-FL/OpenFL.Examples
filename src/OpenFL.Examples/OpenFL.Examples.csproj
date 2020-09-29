@@ -1,0 +1,37 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="examples\instructions\clip_example.fl" />
+    <None Remove="examples\instructions\crop_example.fl" />
+    <None Remove="examples\instructions\cut_example.fl" />
+    <None Remove="examples\instructions\setup\input_test.fl" />
+    <None Remove="examples\misc\steelie_tire_example.fl" />
+    <None Remove="examples\modifiers\array_modifiers.fl" />
+    <None Remove="examples\modifiers\buffer_modifiers.fl" />
+    <None Remove="examples\modifiers\function_modifiers.fl" />
+    <None Remove="examples\variables\arrays_loops_example.fl" />
+    <None Remove="examples\variables\global_variable_examples.fl" />
+    <None Remove="examples\variables\local_variables_examples.fl" />
+    <None Remove="examples\variables\variable_maths_examples.fl" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="examples\instructions\clip_example.fl" />
+    <EmbeddedResource Include="examples\instructions\crop_example.fl" />
+    <EmbeddedResource Include="examples\instructions\cut_example.fl" />
+    <EmbeddedResource Include="examples\instructions\setup\input_test.fl" />
+    <EmbeddedResource Include="examples\misc\steelie_tire_example.fl" />
+    <EmbeddedResource Include="examples\modifiers\array_modifiers.fl" />
+    <EmbeddedResource Include="examples\modifiers\buffer_modifiers.fl" />
+    <EmbeddedResource Include="examples\modifiers\function_modifiers.fl" />
+    <EmbeddedResource Include="examples\variables\arrays_loops_example.fl" />
+    <EmbeddedResource Include="examples\variables\global_variable_examples.fl" />
+    <EmbeddedResource Include="examples\variables\local_variables_examples.fl" />
+    <EmbeddedResource Include="examples\variables\variable_maths_examples.fl" />
+  </ItemGroup>
+
+</Project>

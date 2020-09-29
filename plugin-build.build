@@ -1,0 +1,6 @@
+name: fl-editor-examples
+include: .\src\OpenFL.Editor.Examples\bin\Debug\OpenFL.Examples.dll
+target: .\src\OpenFL.Editor.Examples\bin\Debug\OpenFL.Editor.Examples.dll
+output: .\docs\latest\fl-editor-examples.zip
+origin: https://open-fl.github.io/OpenFL.Editor.Examples/latest/info.txt
+flags: INFO_TO_OUTPUT

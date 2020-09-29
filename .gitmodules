@@ -1,0 +1,4 @@
+[submodule "deps/OpenFL.Editor"]
+	path = deps/OpenFL.Editor
+	url = https://github.com/Open-FL/OpenFL.Editor
+	branch = master
