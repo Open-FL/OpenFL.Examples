@@ -1,12 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Diagnostics;
+﻿using System.Diagnostics;
 using System.Drawing;
 using System.IO;
-using System.Linq;
-using System.Reflection;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 using OpenFL.Editor.Forms;
@@ -38,7 +32,6 @@ namespace OpenFL.Editor.Examples
         [ToolbarItem("Examples", int.MaxValue / 2)]
         private void Examples()
         {
-
         }
 
         [ToolbarItem("Examples/Unpack Examples")]
@@ -48,7 +41,8 @@ namespace OpenFL.Editor.Examples
             if (StyledMessageBox.Show(
                                       "Unpacking Finished.",
                                       "Do you want to load view the Unpacked Files?",
-                                      MessageBoxButtons.YesNo, SystemIcons.Question
+                                      MessageBoxButtons.YesNo,
+                                      SystemIcons.Question
                                      ) ==
                 DialogResult.Yes)
             {
@@ -84,8 +78,6 @@ namespace OpenFL.Editor.Examples
 
             Directory.SetCurrentDirectory(workingDir);
         }
-
-
 
     }
 }
