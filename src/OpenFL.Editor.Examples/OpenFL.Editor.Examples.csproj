@@ -34,6 +34,7 @@
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -53,6 +54,14 @@
     <ProjectReference Include="..\..\deps\OpenFL.Editor\deps\OpenFL\deps\PluginSystem\src\PluginSystem\PluginSystem.csproj">
       <Project>{e4635dce-cc12-4c83-80c6-cc263f46e22a}</Project>
       <Name>PluginSystem</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\deps\OpenFL.Editor\deps\ThemeEngine\src\ThemeEngine\ThemeEngine.csproj">
+      <Project>{5b9f1aba-8297-4855-b06b-b3c0f2419b35}</Project>
+      <Name>ThemeEngine</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\deps\OpenFL.Editor\deps\Utility.WindowsForms\src\Utility.WindowsForms\Utility.WindowsForms.csproj">
+      <Project>{771aa9be-e747-438e-9fa1-f4aa0ad6ddd0}</Project>
+      <Name>Utility.WindowsForms</Name>
     </ProjectReference>
     <ProjectReference Include="..\..\deps\OpenFL.Editor\src\OpenFL.Editor\OpenFL.Editor.csproj">
       <Project>{0dba7a0d-7701-4db4-b6ae-8c3d5d2abdda}</Project>
