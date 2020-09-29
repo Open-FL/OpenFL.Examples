@@ -25,17 +25,17 @@ using Utility.WindowsForms.CustomControls;
 
 namespace OpenFL.Editor.Examples
 {
-    public class OpenFLExamplesPlugin: APlugin<FLEditorPluginHost>
+    public class OpenFLExamplesPlugin : APlugin<FLEditorPluginHost>
     {
 
         public override void OnLoad(PluginAssemblyPointer ptr)
         {
-            base.OnLoad(ptr);   
+            base.OnLoad(ptr);
 
-            ManifestReader.RegisterAssembly(typeof(ExampleInformation).Assembly);   
+            ManifestReader.RegisterAssembly(typeof(ExampleInformation).Assembly);
         }
 
-        [ToolbarItem("Examples")]
+        [ToolbarItem("Examples", int.MaxValue / 2)]
         private void Examples()
         {
 
@@ -84,7 +84,7 @@ namespace OpenFL.Editor.Examples
 
             Directory.SetCurrentDirectory(workingDir);
         }
-        
+
 
 
     }
