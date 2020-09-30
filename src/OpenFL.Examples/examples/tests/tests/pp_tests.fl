@@ -1,0 +1,10 @@
+
+~include: ../helper/pptests/include.fl
+
+~includeinl: ../helper/pptests/includeinl.fl
+
+Main:
+	#random noisetextemp
+	jmp PlainPerlin
+	setactive 0 1 2
+	Mul_t wfctest

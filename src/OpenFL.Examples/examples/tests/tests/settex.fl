@@ -1,0 +1,3 @@
+--define texture other: "examples/tests/textures/TEST.png"
+Main:
+  Set_t other

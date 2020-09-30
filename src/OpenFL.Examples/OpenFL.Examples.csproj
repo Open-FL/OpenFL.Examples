@@ -1,8 +1,8 @@
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
-    <AssemblyVersion>0.0.1.6</AssemblyVersion>
-    <FileVersion>0.0.1.6</FileVersion>
+    <AssemblyVersion>0.0.1.7</AssemblyVersion>
+    <FileVersion>0.0.1.7</FileVersion>
   </PropertyGroup>
   <ItemGroup>
     <None Remove="examples\instructions\clip_example.fl" />
@@ -13,6 +13,29 @@
     <None Remove="examples\modifiers\array_modifiers.fl" />
     <None Remove="examples\modifiers\buffer_modifiers.fl" />
     <None Remove="examples\modifiers\function_modifiers.fl" />
+    <None Remove="examples\tests\helper\inttests\script.fl" />
+    <None Remove="examples\tests\helper\pptests\include.fl" />
+    <None Remove="examples\tests\helper\pptests\includeinl.fl" />
+    <None Remove="examples\tests\tests\addtex.fl" />
+    <None Remove="examples\tests\tests\addval.fl" />
+    <None Remove="examples\tests\tests\cursed_orange.fl" />
+    <None Remove="examples\tests\tests\int_tests.fl" />
+    <None Remove="examples\tests\tests\invert.fl" />
+    <None Remove="examples\tests\tests\multex.fl" />
+    <None Remove="examples\tests\tests\mulval.fl" />
+    <None Remove="examples\tests\tests\perlin.fl" />
+    <None Remove="examples\tests\tests\pp_tests.fl" />
+    <None Remove="examples\tests\tests\random_tests.fl" />
+    <None Remove="examples\tests\tests\settex.fl" />
+    <None Remove="examples\tests\tests\setval.fl" />
+    <None Remove="examples\tests\tests\smooth.fl" />
+    <None Remove="examples\tests\tests\subtex.fl" />
+    <None Remove="examples\tests\tests\subval.fl" />
+    <None Remove="examples\tests\tests\tennisball.fl" />
+    <None Remove="examples\tests\tests\urandom_tests.fl" />
+    <None Remove="examples\tests\tests\wfc.fl" />
+    <None Remove="examples\tests\textures\TEST.png" />
+    <None Remove="examples\tests\WFCTiles\testtile.png" />
     <None Remove="examples\variables\arrays_loops_example.fl" />
     <None Remove="examples\variables\global_variable_examples.fl" />
     <None Remove="examples\variables\local_variables_examples.fl" />
@@ -27,6 +50,29 @@
     <EmbeddedResource Include="examples\modifiers\array_modifiers.fl" />
     <EmbeddedResource Include="examples\modifiers\buffer_modifiers.fl" />
     <EmbeddedResource Include="examples\modifiers\function_modifiers.fl" />
+    <EmbeddedResource Include="examples\tests\helper\inttests\script.fl" />
+    <EmbeddedResource Include="examples\tests\helper\pptests\include.fl" />
+    <EmbeddedResource Include="examples\tests\helper\pptests\includeinl.fl" />
+    <EmbeddedResource Include="examples\tests\tests\addtex.fl" />
+    <EmbeddedResource Include="examples\tests\tests\addval.fl" />
+    <EmbeddedResource Include="examples\tests\tests\cursed_orange.fl" />
+    <EmbeddedResource Include="examples\tests\tests\int_tests.fl" />
+    <EmbeddedResource Include="examples\tests\tests\invert.fl" />
+    <EmbeddedResource Include="examples\tests\tests\multex.fl" />
+    <EmbeddedResource Include="examples\tests\tests\mulval.fl" />
+    <EmbeddedResource Include="examples\tests\tests\perlin.fl" />
+    <EmbeddedResource Include="examples\tests\tests\pp_tests.fl" />
+    <EmbeddedResource Include="examples\tests\tests\random_tests.fl" />
+    <EmbeddedResource Include="examples\tests\tests\settex.fl" />
+    <EmbeddedResource Include="examples\tests\tests\setval.fl" />
+    <EmbeddedResource Include="examples\tests\tests\smooth.fl" />
+    <EmbeddedResource Include="examples\tests\tests\subtex.fl" />
+    <EmbeddedResource Include="examples\tests\tests\subval.fl" />
+    <EmbeddedResource Include="examples\tests\tests\tennisball.fl" />
+    <EmbeddedResource Include="examples\tests\tests\urandom_tests.fl" />
+    <EmbeddedResource Include="examples\tests\tests\wfc.fl" />
+    <EmbeddedResource Include="examples\tests\textures\TEST.png" />
+    <EmbeddedResource Include="examples\tests\WFCTiles\testtile.png" />
     <EmbeddedResource Include="examples\variables\arrays_loops_example.fl" />
     <EmbeddedResource Include="examples\variables\global_variable_examples.fl" />
     <EmbeddedResource Include="examples\variables\local_variables_examples.fl" />

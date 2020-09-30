@@ -1,0 +1,6 @@
+--define texture other: "examples/tests/textures/TEST.png"
+
+Main:
+	Set_v 1
+	setactive 0 1 2
+	Mul_v 0.5

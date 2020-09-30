@@ -1,0 +1,6 @@
+Main:
+  setactive 3
+  Set_v 1
+  setactive 0 1 2
+  Set_v 1
+  Sub_v 0.5

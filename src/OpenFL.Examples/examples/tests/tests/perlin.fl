@@ -1,0 +1,9 @@
+--define texture random: urnd
+
+Main:
+	setactive 3
+	Set_v 1
+	setactive 0 1 2
+	Set_t random
+	#urnd
+	perlin 0.7 8

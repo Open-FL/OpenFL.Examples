@@ -1,0 +1,2 @@
+
+--define texture wfctest: wfc "examples/tests/WFCTiles/testtile.png" 3 128 128 false true 8 0 0 

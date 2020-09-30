@@ -1,0 +1,65 @@
+--define array worleypoints: rnd 100
+--define array innerworleypoints: rnd 1000
+
+Main:
+	jmp OrangePattern
+	jmp Colorize
+	Add_c_t InvOrangePattern
+
+InvOrangePattern:
+	jmp OrangePattern
+	Flip
+	jmp ColorizeDark
+
+OrangePattern:
+	setactive 3
+	Set_v 1
+	setactive 0 1 2
+	worley worleypoints ~worleypoints 0.2
+	#dMul_c_v 3
+	SelfMul_c
+	#dSelfMul_c
+	Flip
+
+	Mix_c_tt CellNoise in
+	
+	Mix_c_tt DetailNoise CellNoise
+	SelfAdd_c
+	#dSelfAdd_c
+	Add_c_t PerlinNoise
+	#jmp Colorize
+
+Colorize:
+	setactive 0
+	Mul_v 0.129411
+	setactive 1
+	Mul_v 0.56470
+	setactive 2
+	Mul_v 0.8588
+
+ColorizeDark:
+	setactive 0
+	Mul_v 0.029411
+	setactive 1
+	Mul_v 0.46470
+	setactive 2
+	Mul_v 0.7588
+
+
+CellNoise:
+	setactive 0 1 2
+	worley innerworleypoints ~innerworleypoints 0.2
+	SelfMul_c
+	SelfMul_c
+	#dFlip
+
+PerlinNoise:
+	setactive 0 1 2
+	urnd
+	perlin 0.1 6
+	Mul_v 0.2
+
+DetailNoise:
+	setactive 0 1 2
+	urnd
+	
