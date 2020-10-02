@@ -1,1 +1,1 @@
-fl-editor-examples|OpenFL.Editor.Examples.dll|https://open-fl.github.io/OpenFL.Examples/latest/info.txt|0.0.0.11|
+fl-editor-examples|OpenFL.Editor.Examples.dll|https://open-fl.github.io/OpenFL.Examples/latest/info.txt|0.0.0.12|
