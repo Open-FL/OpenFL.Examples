@@ -1,6 +1,15 @@
 name: fl-editor-examples
-include: .\src\OpenFL.Editor.Examples\bin\Debug\OpenFL.Examples.dll
-target: .\src\OpenFL.Editor.Examples\bin\Debug\OpenFL.Editor.Examples.dll
-output: .\docs\latest\fl-editor-examples.zip
-origin: https://open-fl.github.io/OpenFL.Examples/latest/info.txt
+branch: Debug
+project-name: OpenFL.Editor.Examples
 flags: INFO_TO_OUTPUT
+
+#Additional Build Info
+include: %buildout%\OpenFL.Examples.dll
+solution: .\src\OpenFL.Examples.sln
+
+#Build Info
+target: %buildout%\%project-name%.dll
+output: .\docs\latest\%name%.zip
+origin: https://open-fl.github.io/%project-name%/latest/info.txt
+buildout: .\src\%project-name%\bin\%branch%
+buildcmd: msbuild {0} /t:Build /p:Configuration=%branch%
