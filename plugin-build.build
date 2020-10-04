@@ -10,6 +10,6 @@ solution: .\src\OpenFL.Examples.sln
 #Build Info
 target: %buildout%\%project-name%.dll
 output: .\docs\latest\%name%.zip
-origin: https://open-fl.github.io/%project-name%/latest/info.txt
+origin: https://open-fl.github.io/OpenFL.Examples/latest/info.txt
 buildout: .\src\%project-name%\bin\%branch%
 buildcmd: msbuild {0} /t:Build /p:Configuration=%branch%
