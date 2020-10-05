@@ -2,15 +2,8 @@ Main:
 	Add_t Tire
 
 	jmp Steelie #Make Steelie wheel
-~if DEBUG
-	#In Debug mode we do not optimize out the jump to Bolts.
-	#So when this is not optimized we can not jump to a Function that is marked as "init static once nojump"
-	setactive 0 1 2 3
-	Add_t Bolts
-~else
-	jmp Bolts
-~endif
 
+	jmp Bolts
 
 	setactive 0 1 2
 	Mul_t SteelieOverlay #Add More Metal like look
@@ -45,7 +38,7 @@ Steelie:
 	Add_t in
 	ClampRescale_vv 0 0.5
 	
-Bolts: init
+Bolts:
 	setactive 0 1 2
 	Flip
 	
