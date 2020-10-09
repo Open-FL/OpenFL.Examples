@@ -1,0 +1,116 @@
+Main:
+#Definitions
+gdef min_noise_level 0.3 #Minimal Value for the noise
+gdef blurstrength 10 #Blurryness of the Rings and Center
+gdef textblur 3 #Blurryness of the Text
+gdef perlin_octave 7
+gdef perlin_persistence 0.8
+gdef red 2 #Red Channel Index
+gdef green #GreenChannel Index
+gdef blue #Blue Channel Index
+gdef alpha #Alpha Channel Index
+gdef half 0.5 # 1/2 = 0.5
+gdef inner_point_radius 0.3
+gdef outer_ring_inner 0.3 #Inner Border of the Outer Ring
+gdef outer_ring_outer 0.4 #Outer Border of the Outer Ring
+gdef middle_ring_inner 0.2 #Inner Border of the Middle Ring
+gdef middle_ring_outer 0.3 #Outer Border of the Middle Ring
+
+#Center
+setactive blue alpha
+Add_c_t CenterPoint
+setactive blue
+Mul_t Noise
+
+#Middle Ring
+setactive green alpha
+Add_c_t MiddleRingBlurred
+setactive alpha
+Mul_t Noise2
+
+#Outer Ring
+setactive red alpha
+Add_c_t OuterRingBlurred
+setactive alpha
+Mul_t Noise3
+
+#FL Text
+setactive red green blue alpha
+Add_c_t BlurredText
+setactive red green blue
+Mul_t Noise
+
+#end Main
+
+#Center point
+CenterPoint: 
+point2d half half inner_point_radius
+
+Noise: 
+urnd
+perlin perlin_persistence perlin_octave
+Max_v min_noise_level
+
+Noise2:
+jmp Noise
+SelfAdd
+
+Noise3:
+jmp Noise2
+SelfAdd
+
+Noise4:
+jmp Noise3
+SelfAdd
+
+#Middle Ring
+
+MiddleRingBlurred: 
+blur_xy MiddleRing blurstrength
+
+MiddleRing: 
+circle1 half half middle_ring_outer
+Sub_t MiddleRingHelper
+
+MiddleRingHelper: 
+circle1 half half middle_ring_inner
+
+#Outer Ring
+
+OuterRingBlurred: 
+blur_xy OuterRing blurstrength
+
+OuterRing: 
+circle1 half half outer_ring_outer
+Sub_t OuterRingHelper
+
+OuterRingHelper: 
+circle1 half half outer_ring_inner
+
+
+#FL Text
+
+BlurredText: 
+blur_xy FLText textblur
+
+FLText: 
+Add_c_t LetterF
+Add_c_t LetterL
+
+LetterF: 
+rect1 0.2 0.2 0.1 0.6
+Add_c_t LetterF1
+Add_c_t LetterF2
+
+LetterF1:
+rect1 0.3 0.2 0.3 0.1
+
+LetterF2:
+rect1 0.3 0.4 0.2 0.1
+
+LetterL: 
+rect1 0.55 0.35 0.1 0.45
+Add_c_t LetterL1
+
+LetterL1:
+rect1 0.55 0.7 0.2 0.1

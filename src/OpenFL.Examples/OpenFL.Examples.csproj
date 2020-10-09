@@ -1,14 +1,15 @@
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
-    <AssemblyVersion>0.0.1.31</AssemblyVersion>
-    <FileVersion>0.0.1.31</FileVersion>
+    <AssemblyVersion>0.0.1.32</AssemblyVersion>
+    <FileVersion>0.0.1.32</FileVersion>
   </PropertyGroup>
   <ItemGroup>
     <None Remove="examples\instructions\clip_example.fl" />
     <None Remove="examples\instructions\crop_example.fl" />
     <None Remove="examples\instructions\cut_example.fl" />
     <None Remove="examples\instructions\setup\input_test.fl" />
+    <None Remove="examples\logo\fl_logo.fl" />
     <None Remove="examples\misc\steelie_tire_example.fl" />
     <None Remove="examples\modifiers\array_modifiers.fl" />
     <None Remove="examples\modifiers\buffer_modifiers.fl" />
@@ -46,6 +47,7 @@
     <EmbeddedResource Include="examples\instructions\crop_example.fl" />
     <EmbeddedResource Include="examples\instructions\cut_example.fl" />
     <EmbeddedResource Include="examples\instructions\setup\input_test.fl" />
+    <EmbeddedResource Include="examples\logo\fl_logo.fl" />
     <EmbeddedResource Include="examples\misc\steelie_tire_example.fl" />
     <EmbeddedResource Include="examples\modifiers\array_modifiers.fl" />
     <EmbeddedResource Include="examples\modifiers\buffer_modifiers.fl" />
