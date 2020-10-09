@@ -6,9 +6,9 @@ gdef textblur 3 #Blurryness of the Text
 gdef perlin_octave 7
 gdef perlin_persistence 0.8
 gdef red 2 #Red Channel Index
-gdef green #GreenChannel Index
-gdef blue #Blue Channel Index
-gdef alpha #Alpha Channel Index
+gdef green 1 #GreenChannel Index
+gdef blue 0 #Blue Channel Index
+gdef alpha 3 #Alpha Channel Index
 gdef half 0.5 # 1/2 = 0.5
 gdef inner_point_radius 0.3
 gdef outer_ring_inner 0.3 #Inner Border of the Outer Ring
